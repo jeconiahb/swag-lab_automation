@@ -1,6 +1,6 @@
 Certainly! Here's a more concise `README.md` file for setting up Selenium with Python:
 
-```markdown
+
 # Selenium Automation with Python
 
 This project uses Selenium with Python for web browser automation. Follow these steps to get started.
@@ -18,7 +18,6 @@ Open your terminal and run:
 
 ```bash
 pip install selenium
-```
 
 ### 2. Download WebDriver
 
