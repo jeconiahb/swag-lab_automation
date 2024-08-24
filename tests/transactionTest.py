@@ -49,7 +49,7 @@ class TransactionTests(unittest.TestCase):
         self.checkout_helper.typeFirstName("John")
         self.checkout_helper.clickContinue() # Skip last name and postal code
         self.assertTrue(self.checkout_helper.validateError())
-        
+
     def test_transaction_no_items_in_cart(self):
         self.cart_helper.openCart()
         self.assertTrue(self.cart_helper.is_cart_empty())
@@ -57,7 +57,11 @@ class TransactionTests(unittest.TestCase):
     def test_cancel_transaction_during_checkout(self):
         self.cart_helper.clickAddtoCart("Sauce Labs Backpack")
         self.cart_helper.openCart()
-        self.checkout_helper.checkout("John", "Doe", "12345")
+        self.checkout_helper.clickCheckout()
+        self.checkout_helper.typeFirstName("John")
+        self.checkout_helper.typeLastName("Doe")
+        self.checkout_helper.typePostal("13245")
+        self.checkout_helper.clickContinue("")
         self.checkout_helper.clickCancel()   
         self.assertTrue(self.login_helper.is_logged_in())
 
