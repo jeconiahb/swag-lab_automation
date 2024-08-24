@@ -5,7 +5,7 @@ This project uses Selenium with Python for web browser automation. Follow these 
 
 ## Prerequisites
 
-- **Python 3.x**: [Download and install Python](https://www.python.org/downloads/).
+- **Python 3.12.5: [Download and install Python](https://www.python.org/downloads/).
 - **WebDriver**: Browser driver for Selenium
 
 ## Setup Instructions
