@@ -146,6 +146,5 @@
 - **Boundary Test Cases (Login)**: Beberapa tes gagal.
 - **Positive Test Cases (Transaksi)**: Semua tes berhasil.
 - **Negative Test Cases (Transaksi)**: Semua tes berhasil
-
-.
 - **Boundary Test Cases (Transaksi)**: Beberapa tes gagal.
+.
